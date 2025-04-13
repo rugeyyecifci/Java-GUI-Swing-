@@ -1,0 +1,27 @@
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Main {
+    public static void main(String[] args) {
+
+        JFrame f = new JFrame("Buton örneği");
+
+        JButton btn = new JButton("Tıkla");
+        btn.setBounds(0,0,100,30);
+        btn.addActionListener(new ActionListener(){
+@Override
+            public void actionPerformed(ActionEvent e){
+    System.out.println("Merhaba butona tıklandı");
+}
+
+        });
+
+
+        f.add(btn);
+        f.setSize(400,400);
+        f.setLayout(null);
+        f.setVisible(true);
+
+    }
+}
